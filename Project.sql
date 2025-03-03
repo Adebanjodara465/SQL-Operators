@@ -49,6 +49,9 @@ SELECT * FROM Customers
  (SELECT MAX(Grade) FROM Customers);
 
 SELECT * FROM Customers
- WHERE City = 'NY' AND Grade = 100;
+ WHERE City = 'NY' OR Grade = 100;
+
+SELECT * FROM Customers
+WHERE City = 'NY' AND Grade >= 200; 
 
  
